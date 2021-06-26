@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap'); 
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  overflow: hidden;
+  margin: 0;
+  background: rgb(248, 245, 245);
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+body.dark {
+  background: #111;
+}
+
+header {
+  align-items: center;
+  color: #111;
+  display: flex;
+  width: 100vw;
+}
+header.dark {
+  color: #fff;
+}
+
+#change_theme_button {
+  background-color: rgba(255, 255, 255, 0);
+  background-image: url('public/moon.png');
+  background-size: cover;
+  cursor: pointer;
+  border: 0;
+  right: 30px;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+}
+#change_theme_button.dark {
+  background-image: url('public/sun.png');
+}
+
+header h1 {
+  text-align: center;
+  width: 100vw;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
+}
+
+.slide {
+  height: 80vh;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  color: #fff;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative; /* позиционирование относительно своего местоположения */
+  transition: all 0.5s ease-in-out;
+}
+
+.slide h3 {
+  position: absolute; /* позиционирование относительно блока */
+  font-size: 24px;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.slide.active {
+  flex: 10;
+}
+
+.slide.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
