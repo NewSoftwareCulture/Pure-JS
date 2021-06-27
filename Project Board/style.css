@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #e5e5e5;
+  margin: 0;
+  padding: 0;
+}
+
+header h1 {
+  margin: 0;
+  padding: 20px 0;
+  color: #2b878a;
+  background-color: white;
+  text-align: center;
+}
+
+.content {
+  border-radius: 20px;
+  background-color: white;
+  margin: 20px auto;
+  max-width: 800px;
+  display: flex;
+  height: 70vh;
+  width: 100%;
+  padding-top: 5rem;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.col-header {
+  width: 150px;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  border-radius: 20px;
+  margin: 0 2vw;
+  padding: 0.8rem 1rem;
+  color: #fff;
+}
+
+.item {
+  width: 150px;
+  height: 66px;
+  border: 1px solid #eee;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  border-radius: 20px;
+  background: #f7f6f7;
+  padding: 0.8rem 1rem;
+  color: #828282;
+  text-align: center;
+  cursor: grab;
+}
+
+.item:active {
+  cursor: grabbing;
+}
+
+.placeholder {
+  margin: 0 2vw;
+  width: 150px;
+  height: 66px;
+}
+
+.start {
+  background: linear-gradient(90deg, #ff85e4 0%, #229efd 179.25%);
+}
+
+.progress {
+  background: linear-gradient(90deg, #209cff 0%, #68e0cf 100%);
+}
+
+.done {
+  background: linear-gradient(90deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.hold {
+  border: 3px solid rgb(180, 238, 180);
+  background-color: rgb(128, 127, 127);
+  color: white;
+}
+
+.hide {
+  display: none;
+}
+
+.hovered {
+  animation-duration: 1s;
+  animation-name: border-anim;
+  border-top: 200px solid rgb(180, 238, 180);
+}
+
+@keyframes border-anim {
+  from {
+    border-top: 1px solid white;
+  }
+  to {
+    border-top: 200px solid rgb(180, 238, 180);
+  }
+}

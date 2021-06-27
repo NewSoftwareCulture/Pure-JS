@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="public/favicon.png" type="image/x-icon">
+  <title>Trello</title>
+</head>
+<body>
+  <header>
+    <h1>Project board</h1>
+  </header>
+  <div class="content">
+    <div>
+      <div class="row">
+          <div class="col-header start">Начать</div>
+          <div class="col-header progress">В процессе</div>
+          <div class="col-header done">Готовы</div>
+      </div>
+
+      <div class="row">
+        <div class="placeholder createPlaceholder">
+          <div class="item" draggable="true">Актуальная задачка</div>
+        </div>
+        <div class="placeholder"></div>
+        <div class="placeholder"></div>
+      </div>
+      
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
