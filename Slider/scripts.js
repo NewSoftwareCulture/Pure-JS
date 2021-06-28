@@ -31,3 +31,12 @@ buttonUp.addEventListener('click', () => {
 buttonDown.addEventListener('click', () => {
   changeSlide('down');
 });
+
+document.addEventListener('keydown', (event) => {
+  console.log(event.key);
+  if (event.key === 'ArrowUp') changeSlide('up');
+  if (event.key === 'ArrowRight') changeSlide('up');
+  if (event.key === 'ArrowDown') changeSlide('down');
+  if (event.key === 'ArrowLeft') changeSlide('down');
+  if (event.key === ' ') changeSlide('down');
+})
