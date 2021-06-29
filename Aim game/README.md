@@ -1,0 +1,1 @@
+# Aim game on pure JS
