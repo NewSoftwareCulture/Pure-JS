@@ -1,0 +1,1 @@
+# Slider on pure JS

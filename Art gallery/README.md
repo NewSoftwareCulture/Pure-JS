@@ -1,4 +1,4 @@
-# Art Gallery on vanilla JS
+# Art Gallery on pure JS
 
 - Click on slides
 - Ligth and Dark themes

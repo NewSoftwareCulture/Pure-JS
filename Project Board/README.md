@@ -1,3 +1,3 @@
-# Project board on vanilla JS
+# Project board on pure JS
 
 - Drag and drop
